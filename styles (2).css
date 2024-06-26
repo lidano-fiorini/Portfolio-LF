@@ -1,0 +1,400 @@
+/*------------------------------
+            ABOUT-ME
+-------------------------------*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+  font-family:'Press Start 2P', cursive ;
+  background-color: silver;
+}
+
+.block{
+  width: 100%;
+  height: 40px;
+}
+
+.up{
+  border-bottom: 5px solid black;
+}
+
+.down{
+  border-top: 5px solid black;
+}
+
+.logo{
+ width: 35px;
+ height: 35px;
+ border-radius: 20px;
+}
+
+li{
+  padding: 30px;
+  list-style: none;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dropdown:hover{
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.tendina{
+  display: none;
+}
+
+.button:link,
+.button:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cv, .github{
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+
+}
+
+/*---------------------------
+           MOBILE
+-----------------------------*/
+
+@media only screen and (max-width:470px) {
+
+
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h1{
+  font-size: 27px;
+  letter-spacing: 10px;
+  line-height: 40px;
+}
+
+h4{
+  font-size: 12px;
+  letter-spacing: 8px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.tendina li  {
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 8px;
+ font-size: 11px;
+}
+
+.dropdown:hover .tendina {
+ display: flex;
+ margin: 10px;
+}
+
+.menu{
+  font-size: 8px;
+}
+
+.about-me{
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/*-------------------------------*/
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  width: 150px;
+  border: 3px solid black;
+  border-radius: 10px;
+
+}
+
+.testo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 85%;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+ p{
+   padding: 15px;
+   font-size: 8px;
+   line-height: 15px;
+ }
+
+}
+
+/*-------------------------------
+             TABLET
+---------------------------------*/
+
+@media only screen and (min-width:470px) and (max-width: 961px) {
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+h1{
+ font-size: 50px;
+ letter-spacing: 10px;
+ line-height: 70px;
+}
+
+h4{
+ font-size: 15px;
+ letter-spacing: 18px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.tendina li  {
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 8px;
+ font-size: 11px;
+}
+
+.dropdown:hover .tendina {
+ display: flex;
+}
+
+.about-me{
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/*-----------------------------------*/
+.content{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+
+}
+
+img{
+  width: 200px;
+  height: 240px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.testo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 10px;
+  width: 60%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+ p{
+   padding: 15px;
+   font-size: 11px;
+   line-height: 20px;
+}
+}
+
+/*---------------------
+       DESKTOP
+---------------------*/
+
+@media only screen and (min-width:961px) {
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  border-bottom: 5px solid black;
+}
+
+h1{
+  font-size: 73px;
+  letter-spacing: 18px;
+  line-height: 90px;
+}
+
+h4{
+  font-size: 23px;
+  letter-spacing: 28px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.home,
+.about-me,
+.project,
+.contact-me,
+.social{
+  width: 50%;
+}
+
+.tendina li  {
+  margin-top: 20px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.dropdown {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-size: 16px;
+}
+
+.dropdown:hover .tendina {
+  display: flex;
+}
+
+.about-me{
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 80px;
+  text-align: left;
+}
+
+/*--------------------------------*/
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15%;
+}
+
+img{
+  width: 240px;
+  height: 300px;
+  border: 3px solid black;
+  border-radius: 10px;
+
+}
+
+.testo{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 65%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+ p{
+   padding: 15px;
+   font-size: 14px;
+   line-height: 25px;
+ }
+
+ .button{
+
+  width: 240px;
+  margin-left: 5%;
+}
+
+ .cv, .github{
+  font-size: 12px;
+ }
+}
